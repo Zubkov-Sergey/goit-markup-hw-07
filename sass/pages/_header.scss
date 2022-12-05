@@ -33,8 +33,13 @@
       transition-property: color;
       transition-duration: var(--time);
       transition-timing-function: var(--timing-function);
+      &:hover,
+      &:focus,
+      &.current {
+             color: var(--color-blue);
+        }
   }
-  .navigation--current::after {
+  .navigation__current::after {
       content:"";
       position: absolute;
       left: 0;
@@ -49,11 +54,6 @@
   .navigation-contacts  { 
       gap: 30px;
   }
-  .navigation__link:hover,
-  .navigation__link:focus,
-  .navigation__link.current {
-   color: var(--color-blue);
-  }
   
   .navigation-contacts__link {
    width: 100%;
@@ -66,10 +66,10 @@
    transition-property: color;
     transition-duration: var(--time);
     transition-timing-function: var(--timing-function);
-  }
-  .navigation-contacts__link:hover,
-  .navigation-contacts__link:focus {
+   &:hover,
+   &:focus {
    color: var(--color-blue);
+  }
   }
   
   .navigation-contacts__envelope {

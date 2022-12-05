@@ -56,14 +56,13 @@
     align-items: center;
     transition: color var(--time) var(--timing-function),
     background-color var(--time) var(--timing-function) ;
+    &:hover,
+    &:focus {
+       background-color: var(--color-blue);
+       color: var(--color-white);
+}
 
 }
 .social__icon {
     fill: currentColor;
-}
-
-.social__link:hover,
-.social__link:focus {
-    background-color: var(--color-blue);
-    color: var(--color-white);
 }
