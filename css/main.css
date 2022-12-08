@@ -419,6 +419,7 @@ body {
   text-decoration: none;
   color: var(--color-grey);
   display: flex;
+  align-items: center;
   transition-property: color;
   transition-duration: var(--time);
   transition-timing-function: var(--timing-function);
